@@ -43,10 +43,13 @@ All examples below use cURL requests at the command line (in Linux). Requests ca
 To generate a PID handle record automatically generating a UUID for the suffix:
 ::
 	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X POST --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/
-*Note: Test API (http://vm04.pid.gwdg.de:8081/handles/)and test prefix (21.T11998) used.*
 
 ``Result: https://vm04.pid.gwdg.de:8081/handles/21.T11998/0000-001A-64A4-A``
-	
+
+To generate a PID handle record automatically generating a UUID within the suffix:
+::
+	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X POST --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/\?prefix=BODC\&suffix=TEST
+
 ..	[1] https://www.pidconsortium.net/
 ..	[2] https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
 ..	[3] https://github.com/rdawg-pidinst/schema
