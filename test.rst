@@ -17,10 +17,6 @@ Introduction
 ~~~~~~~~~~~~
 This cookbook enables instrument providers to create persistent identifiers (PID) for instruments using the ePIC infrastructure [1]_. ePIC is an international consortium that provides PID services for the worldwide research community, allowing them to allocate and resolve PIDs based on the handle system (TM, https://www.handle.net/). In 2019, ePIC published a metadata schema for citing instruments, as part of the recommendations resulting from the Research Data Alliance working group for the persistent identification of instruments (PIDINST) [2]_ referred to as the PIDINST metadata schema [3]_. This document provides technical guidance for publishing instrument PIDs through ePIC.
 
- ..	[1] https://www.pidconsortium.net/
- ..	[2] https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
- ..	[3] https://github.com/rdawg-pidinst/schema
-
 
 PIDINST handles at ePIC
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,3 +43,9 @@ All examples below use cURL requests at the command line (in Linux). Requests ca
 To generate a PID handle record automatically generating a UUID for the suffix:
 ::
 	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X POST --data '[{"type":"URL","parsed_data":"https://linkedsystems.uk/system/instance/TOOL0022_2490/current/"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/
+*Note: Test API (http://vm04.pid.gwdg.de:8081/handles/)and test prefix (21.T11998) used.*
+	
+..	[1] https://www.pidconsortium.net/
+..	[2] https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
+..	[3] https://github.com/rdawg-pidinst/schema
+
