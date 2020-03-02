@@ -1,5 +1,5 @@
 ===============================================================================
-Persistent Identification of Instruments (PIDINST) Cookbook
+Persistent Identification of Instruments (PIDINST) ePIC Cookbook
 ===============================================================================
 
 .. sectnum::
@@ -135,7 +135,7 @@ For given username, index, where the public key HS_PUBKEY is stored, and prefix 
 	USERKEY="${PATH}/Certificates/${INDEX}_${PREFIX}_${USER}_privkey.pem"
 	USERCERT="${PATH}/Certificates/${INDEX}_${PREFIX}_${USER}_certificate_only.pem"
 
-**Create handle:**
+**Create Handle:**
 ::
 	curl -s --insecure ${VERBOSE} --key ${USERKEY} --cert ${USERCERT} -H "Content-Type:application/json" -H 'Authorization: Handle clientCert="true"' -X PUT --data  '{"values":[{"index":100,"type":"HS_ADMIN","data":{"value":{"index":'${INDEX}',"handle":"'${PREFIX}'\/'${USER}'","permissions":"011111110011","format":"admin"},"format":"admin"}},{"index":1,"type":"URL","data":"www.gwdg.de"}]}' https://${SERVPORT}/api/handles/${PREFIX}/test_epic3_1234
 
