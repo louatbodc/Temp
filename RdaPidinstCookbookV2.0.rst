@@ -77,7 +77,7 @@ http://hdl.handle.net/api/handles/21.T11998/0000-001A-3905-F
 
 Updating the description of a PID handle record
 -----------------------------------------------
-Properties are updated using the PUT method by either specifying the JSON properties directly in the cURL request or parsing them via a JSON file. A `JSON example`_ is available at our GitHub repository.
+Properties are updated using the PUT method by either specifying the JSON properties directly in the cURL request or parsing them via a JSON file. A `JSON example <>`_ is available at our GitHub repository.
 
 Directly specifying properties within the cURL request:
 ::
