@@ -66,11 +66,11 @@ If you have specified the URLproperty in the handle record it will automatically
 
 http://hdl.handle.net/21.T11998/0000-001A-3905-F
 
- If you want to see the handle record then use:
+If you want to see the handle record then use:
  
 http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
 
- The REST API calls can also yield JSON responses:
+The REST API calls can also yield JSON responses:
  
 http://hdl.handle.net/api/handles/21.T11998/0000-001A-3905-F
 
