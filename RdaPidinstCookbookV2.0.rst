@@ -58,6 +58,85 @@ To manually generate a suffix using PUT method:
 
 ``Result:`` https://vm04.pid.gwdg.de:8081/handles/21.T11998/564987-8865544-9998
 
+
+Viewing PID handle records
+--------------------------
+If you have specified the URLproperty in the handle record it will automatically redirect you to it when you view the handle record:
+
+http://hdl.handle.net/21.T11998/0000-001A-3905-F
+
+ If you want to see the handle record then use:
+ 
+http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
+
+ The REST API calls can also yield JSON responses:
+ 
+http://hdl.handle.net/api/handles/21.T11998/0000-001A-3905-F
+
+
+Updating the description of a PID handle record
+-----------------------------------------------
+Properties are updated using the PUT method by either specifying the JSON properties directly in the cURL request or parsing them via a JSON file. A JSON example is available at our GitHub repository.
+
+Directly specifying properties within the cURL request:
+::
+	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type": "21.T11148/8eb858ee0b12e8e463a5","parsed_data": "{\"identifierValue\":\"http://hdl.handle.net/21.T11998/BODC-0000-001A-64A3-B-TEST\",\"identiferType\":\"MeasuringInstrument\"}"},{"type": "21.T11148/4eaec4bc0f1df68ab2a7","parsed_data": "[{\"Owner\": {\"ownerName\":\"National Oceanography Centre\",\"ownerContact\":\"louise.darroch@bodc.ac.uk\",\"ownerIdentifier\":{\"ownerIdentifierValue\":\"http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/\",\"ownerIdentifierType\":\"URL\"}}}]"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+*Note: Double quotes must be escaped with a backslash (\\) within the JSON parsed_data string*
+
+Specifying properties with a JSON file:
+::
+	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data @/users/.../ePIC_json_example.json http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+
+
+Managing PIDs
+-------------
+Using the ePIC API
+``````````````````
+The following HTTP protocol methods enable users to manage their PID handle records using the ePIC API based on username-password.
+Server: ``vm04.pid.gwdg.de``, Port: ``8081``, Resources: ``handles/``
+
+Get a PID:
+::
+	curl -D- -u "username:password" -X GET -H "Content-Type: application/json" http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+
+Delete a PID (not allowed for production Handles):
+::
+	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X DELETE http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+
+Update a PID:
+::
+	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type":"21.T11148/8eb858ee0b12e8e463a5","parsed_data":"{\"identifierValue\":\"http://hdl.handle.net/21.T11998/BODC-0000-001A-64A3-B-TEST\",\"identiferType\":\"MeasuringInstrument\"}"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
+
+
+Using the Handle API
+````````````````````
+The following HTTP protocol methods enable users to manage their PID handle records using the generic Handle API based on Certificates.
+Server: ``vm04.pid.gwdg.de``, Port: ``8081``, Resources: ``handles/``
+
+The process to derive the ``privkey.pem`` and ``certificate_only.pem`` from a is described for instance at: http://eudat-b2safe.github.io/B2HANDLE/creatingclientcertificates.html
+
+The Handle API does not have an internal suffix generator. The suffix needs to be provided by the user.
+
+The Handle API only knows POST, GET and DELETE methods, which means that, if the Credentials are sufficient, an existing PID could be accidentally overwritten by a request intended for creation. This has to be detected by the user in advance.
+
+
+Access parameters:
+
+For given username, index, where the public key HS_PUBKEY is stored, and prefix the certificate files are stored here with the naming convention ${INDEX}_${PREFIX}_${USER}_???.pem.
+::
+	PATH="/SomePath2Certs"
+	PREFIX="21.T11998" # prefix of the PID service
+	USER="USER21" # USER that has access to PIDs under $PREFIX
+	INDEX="300"  # index where HS_PUBKEY is stored for $USER
+	SERVPORT="vm04.pid.gwdg.de:8001" # PID service and port
+	VERBOSE="" # optional “ -v "
+	# Certificates
+	USERKEY="${PATH}/Certificates/${INDEX}_${PREFIX}_${USER}_privkey.pem"
+	USERCERT="${PATH}/Certificates/${INDEX}_${PREFIX}_${USER}_certificate_only.pem"
+
+
+
+
 ..	[1] https://www.pidconsortium.net/
 ..	[2] https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
 ..	[3] https://github.com/rdawg-pidinst/schema
