@@ -95,15 +95,15 @@ Using the ePIC API
 The following HTTP protocol methods enable users to manage their PID handle records using the ePIC API based on username-password.
 Server: ``vm04.pid.gwdg.de``, Port: ``8081``, Resources: ``handles/``
 
-Get a PID:
+**Get a PID:**
 ::
 	curl -D- -u "username:password" -X GET -H "Content-Type: application/json" http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
-Delete a PID (not allowed for production Handles):
+**Delete a PID (not allowed for production Handles):**
 ::
 	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X DELETE http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
-Update a PID:
+**Update a PID:**
 ::
 	curl -v -u "username:password" -H "Accept:application/json" -H "Content-Type:application/json" -X PUT --data '[{"type":"21.T11148/8eb858ee0b12e8e463a5","parsed_data":"{\"identifierValue\":\"http://hdl.handle.net/21.T11998/BODC-0000-001A-64A3-B-TEST\",\"identiferType\":\"MeasuringInstrument\"}"}]' http://vm04.pid.gwdg.de:8081/handles/21.T11998/BODC-0000-001A-64A3-B-TEST
 
@@ -120,7 +120,7 @@ The Handle API does not have an internal suffix generator. The suffix needs to b
 The Handle API only knows POST, GET and DELETE methods, which means that, if the Credentials are sufficient, an existing PID could be accidentally overwritten by a request intended for creation. This has to be detected by the user in advance.
 
 
-Access parameters:
+**Access parameters:**
 
 For given username, index, where the public key HS_PUBKEY is stored, and prefix the certificate files are stored here with the naming convention ${INDEX}_${PREFIX}_${USER}_???.pem.
 ::
@@ -134,8 +134,21 @@ For given username, index, where the public key HS_PUBKEY is stored, and prefix 
 	USERKEY="${PATH}/Certificates/${INDEX}_${PREFIX}_${USER}_privkey.pem"
 	USERCERT="${PATH}/Certificates/${INDEX}_${PREFIX}_${USER}_certificate_only.pem"
 
+**Create handle:**
+::
+	curl -s --insecure ${VERBOSE} --key ${USERKEY} --cert ${USERCERT} -H "Content-Type:application/json" -H 'Authorization: Handle clientCert="true"' -X PUT --data  '{"values":[{"index":100,"type":"HS_ADMIN","data":{"value":{"index":'${INDEX}',"handle":"'${PREFIX}'\/'${USER}'","permissions":"011111110011","format":"admin"},"format":"admin"}},{"index":1,"type":"URL","data":"www.gwdg.de"}]}' https://${SERVPORT}/api/handles/${PREFIX}/test_epic3_1234
 
+**Get Handle created:**
+::
+	curl -s --insecure ${VERBOSE} --key ${USERKEY} --cert ${USERCERT} -H "Content-Type:application/json" -H 'Authorization: Handle clientCert="true"' -q https://${SERVPORT}/api/handles/test_epic3_1234
+	
+**Modify Handle created:**
+::
+	curl -s --insecure ${VERBOSE} --key ${USERKEY} --cert ${USERCERT} -H "Content-Type:application/json" -H 'Authorization: Handle clientCert="true"' -X PUT --data  '{"values":[{"index":100,"type":"HS_ADMIN","data":{"value":{"index":'${INDEX}',"handle":"'${PREFIX}'\/'${USER}'","permissions":"011111110011","format":"admin"},"format":"admin"}},{"index":1,"type":"URL","data":"pid.gwdg.de"}]}' https://${SERVPORT}/api/handles/${PREFIX}/test_epic3_1234
 
+**Delete Handle created:**
+::
+	curl -s --insecure ${VERBOSE} --key ${USERKEY} --cert ${USERCERT} -H "Content-Type:application/json" -H 'Authorization: Handle clientCert="true"' -X DELETE  https://${SERVPORT}/api/handles/test_epic3_1234
 
 ..	[1] https://www.pidconsortium.net/
 ..	[2] https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
