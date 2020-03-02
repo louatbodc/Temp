@@ -13,6 +13,7 @@ Persistent Identification of Instruments (PIDINST) Cookbook
 |Date              |19 February 2020                                                               |
 +------------------+-------------------------------------------------------------------------------+
 
+
 Introduction
 ~~~~~~~~~~~~
 This cookbook enables instrument providers to create persistent identifiers (PID) for instruments using the ePIC infrastructure [1]_. ePIC is an international consortium that provides PID services for the worldwide research community, allowing them to allocate and resolve PIDs based on the handle system (TM, https://www.handle.net/). In 2019, ePIC published a metadata schema for citing instruments, as part of the recommendations resulting from the Research Data Alliance working group for the persistent identification of instruments (PIDINST) [2]_ referred to as the PIDINST metadata schema [3]_. This document provides technical guidance for publishing instrument PIDs through ePIC.
@@ -76,7 +77,7 @@ http://hdl.handle.net/api/handles/21.T11998/0000-001A-3905-F
 
 Updating the description of a PID handle record
 -----------------------------------------------
-Properties are updated using the PUT method by either specifying the JSON properties directly in the cURL request or parsing them via a JSON file. A JSON example is available at our GitHub repository.
+Properties are updated using the PUT method by either specifying the JSON properties directly in the cURL request or parsing them via a JSON file. A `JSON example`_ is available at our GitHub repository.
 
 Directly specifying properties within the cURL request:
 ::
