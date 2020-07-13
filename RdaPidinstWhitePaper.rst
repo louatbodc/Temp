@@ -1025,7 +1025,7 @@ temperature and depth sensor.
 The list of properties that can be expressed in SensorML to describe
 sensors is not particularly restrictive and it is recommended that
 institutional instrument providers follow the PIDINST guidance on
-landing page content (see section\ `Landing page
+landing page content (see section\  `Landing page
 content <#landing-page-content>`__). Recently, the Marine SWE
 Profiles [15]_ initiative specified a comprehensive metadata profile to
 improve the semantic interoperability of SensorML in the Earth Science
