@@ -464,7 +464,7 @@ with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
 
 (1)
 
-   .. code-block:: XML
+.. code-block:: XML
    
       <relatedIdentifiers>
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsIdenticalTo">10.4232/10.CPoS-2013-02en</relatedIdentifier>
@@ -473,7 +473,7 @@ with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
 
 (2)
 
-  .. code-block:: JSON
+.. code-block:: JSON
   
     [{
        "RelatedIdentifier":{
@@ -551,7 +551,7 @@ organisation logo and re-directs the scanner to the PID URL
 
 
 
-  .. code-block:: XML
+.. code-block:: XML
   
       <AlternateIdentifiers>
          <AlternateIdentifier alternateIdentifierType="serialNumber"">7351-349l-mn24-019f</AlternateIdentifier>
@@ -592,7 +592,7 @@ attribute *IsNewVersionOf* for the new PID and, *IsPreviousVersionOf*
 for the superceded PID as shown in Snippet 8.1 and 8.2.
 
 (1)
-  .. code-block:: XML
+.. code-block:: XML
 
       <relatedIdentifiers>
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsNewVersionOf">10.4232/10.CPoS-2013-02en</relatedIdentifier>
@@ -602,7 +602,7 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
 
 (2)
 
-  .. code-block:: XML
+.. code-block:: XML
 
       <relatedIdentifiers>
          <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPreviousVersionOf">http://hdl.handle.net/21.T11998/0000-001A-3905-F</relatedIdentifier>
@@ -616,7 +616,7 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
 
 (1)
 
-  .. code-block:: JSON
+.. code-block:: JSON
 
       [{
         "RelatedIdentifier":{
@@ -629,7 +629,7 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
 
 (2)
 
-  .. code-block:: JSON
+.. code-block:: JSON
 
       [{
         "RelatedIdentifier":{
