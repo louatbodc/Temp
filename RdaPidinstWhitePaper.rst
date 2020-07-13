@@ -540,9 +540,9 @@ PIDINST schema recommends the use of the terms *serialNumber* and
 explicit fields for these properties in PIDINST.
 
 .. image:: images/image4.png
-   :height: 100
-   :width: 100
-   :scale: 25
+   :width: 100 %
+   :height: 100 %
+   :scale: 25 %
    :alt: QR code
 
 **Figure 7.1:** An example of a webpage QR code that includes an
