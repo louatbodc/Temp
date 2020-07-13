@@ -775,7 +775,7 @@ can be mapped into a linked data representation. In the following a
 respective representation in JSON-LD of the schema example shown in
 table 4.1 is shown in snippet 10.1.
 
-  .. code-block:: JSON
+.. code-block:: JSON
   
         {
         "@context" : {
