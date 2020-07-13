@@ -592,6 +592,7 @@ attribute *IsNewVersionOf* for the new PID and, *IsPreviousVersionOf*
 for the superceded PID as shown in Snippet 8.1 and 8.2.
 
 (1)
+
 .. code-block:: XML
 
       <relatedIdentifiers>
