@@ -150,6 +150,8 @@ PIDINST schema as implemented by ePIC. The terminologies used are
 published on the NERC Vocabulary Server (NVS) [7]_. The data for each
 metadata property is provided in JSON. The Handle record can be viewed
 at http://hdl.handle.net/21.T11998/0000-001A-3905-F?noredirect
+
+
 +----------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 | Type                                                     | Data                                                                                             |
 +==========================================================+==================================================================================================+
