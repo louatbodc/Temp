@@ -546,15 +546,13 @@ explicit fields for these properties in PIDINST.
 organisation logo and re-directs the scanner to the PID URL
 (http://hdl.handle.net/21.T11998/0000-001A-3905-F).
 
-+----------------------------------------------------------------------+
-| <AlternateIdentifiers>                                               |
-|                                                                      |
-|    <AlternateIdentifier                                              |
-|    alternateIden                                                     |
-| tifierType="serialNumber"">7351-349l-mn24-019f</AlternateIdentifier> |
-|                                                                      |
-| </AlternateIdentifiers>                                              |
-+----------------------------------------------------------------------+
+
+  .. code-block:: JSON
+  
+      <AlternateIdentifiers>
+         <AlternateIdentifier alternateIdentifierType="serialNumber"">7351-349l-mn24-019f</AlternateIdentifier>
+      </AlternateIdentifiers>
+
 
 **Snippet 7.1:** An instrument serial number expressed in XML
 
