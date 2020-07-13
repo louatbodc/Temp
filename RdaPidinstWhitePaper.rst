@@ -1069,19 +1069,21 @@ example a social event. As such, new types and properties are required
 to support the description of observation events and related scientific
 instruments to ensure full compliance with Schema.org functionality.
 
-|image2|
+.. image:: images/image2.png
+    :alt: PANGAEA dataset
 
 **Figure 11.1:** An example of a dataset published by PANGAEA which
 includes its instrument identifier
 (https://doi.pangaea.de/10013/sensor.664525cf-45b9-4969-bb88-91a1c5e97a5b)
 
-|image3|
---------
+.. image:: images/image1.png
+    :alt: Conceptual model
 
 **Figure 11.2:** Conceptual model of Event and Specific Instrument Type
 (Vehicle)
 
-|image4|
+.. image:: images/image3.png
+    :alt: Schema.org
 
 **Figure 11.3:** Snippet of schema.org representation of event and
 instrument associated with the dataset in Figure 11.1.
