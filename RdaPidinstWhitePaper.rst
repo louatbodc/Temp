@@ -462,7 +462,7 @@ representative record by ensuring links between them. This can be
 achieved using the PIDINST metadata schema *relatedIdentifier* property
 with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
 
-(a)
+(1)
 
    .. code-block:: XML
    
@@ -471,7 +471,7 @@ with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
       </relatedIdentifiers>
 
 
-(b)
+(2)
 
   .. code-block:: JSON
   
@@ -483,8 +483,8 @@ with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
        }]
 
 
-**Snippet 6.1:** Merging duplicate instrument PID records using (a) XML
-and (b) JSON
+**Snippet 6.1:** Merging duplicate instrument PID records using (1) XML
+and (2) JSON
 
 Recent advances in technologies are expanding to algorithms that
 automatically detect and resolve deduplication. While such methodologies
