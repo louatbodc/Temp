@@ -1006,8 +1006,6 @@ rather than global instrument PIDs directly. The link between local
 identifiers and instrument PIDs can be found indirectly using a
 combination of *GetCapabilities* and *DescribeSensor* operational
 requests to a SOS server.
-
-
 ::
       <sml:identifier>
         <sml:Term definition="http://www.example.com/definitions/pidinst/">
