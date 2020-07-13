@@ -63,6 +63,72 @@ Germany
 Working Group members* (https://www.rd-alliance.org/node/57186/members)
 
 
+
+**Table of contents**
+
+`1 Overview <#overview>`__
+
+`2 Instrument PIDs <#instrument-pids>`__
+
+`3 Publishing new instrument PIDs <#publishing-new-instrument-pids>`__
+
+`4 PIDINST metadata schema <#pidinst-metadata-schema>`__
+
+   `4.1 Using common terminologies <#using-common-terminologies>`__
+
+   `4.2 Using other PIDs <#using-other-pids>`__
+
+   `4.2.1 RRIDs <#rrids>`__
+
+`5 Registration <#registration>`__
+
+   `5.1 Central registration at PID
+   providers <#central-registration-at-pid-providers>`__
+
+   `5.2 Local registration at institutional instrument
+   providers <#local-registration-at-institutional-instrument-providers>`__
+
+`6 Dealing with duplication <#dealing-with-duplication>`__
+
+`7 Linking physical objects <#linking-physical-objects>`__
+
+`8 When to create a new PID? <#when-to-create-a-new-pid>`__
+
+`9 Landing page content <#landing-page-content>`__
+
+`10 Landing page encoding <#landing-page-encoding>`__
+
+   `10.1 Examples <#examples>`__
+
+   `10.1.1 JSON-LD <#json-ld>`__
+
+   `10.1.2 Sensor web enablement (SWE) <#sensor-web-enablement-swe>`__
+
+   `10.2 Content negotiation <#content-negotiation>`__
+
+`11 Linking instrument PIDs to
+datasets <#linking-instrument-pids-to-datasets>`__
+
+   `11.1 schema.org <#schema.org>`__
+
+   `11.2 NetCDF4 <#netcdf4>`__
+
+`12 Current, planned and potential
+adoption <#current-planned-and-potential-adoption>`__
+
+   `12.1 Helmholtz-Zentrum Berlin für Materialien und Energie
+   (HZB) <#helmholtz-zentrum-berlin-für-materialien-und-energie-hzb>`__
+
+   `12.2 British Oceanographic Data Centre
+   (BODC) <#british-oceanographic-data-centre-bodc>`__
+
+   `12.3 EISCAT3D <#eiscat3d>`__
+
+   `12.4 SENSOR.awi.de and PANGAEA <#sensor.awi.de-and-pangaea>`__
+
+   `12.5 ICOS <#icos>`__
+
+
 1 Overview
 ==========
 
