@@ -539,7 +539,9 @@ PIDINST schema recommends the use of the terms *serialNumber* and
 *inventoryNumber.* There is on-going discussion regarding the use of
 explicit fields for these properties in PIDINST.
 
-|image1|
+.. image:: images/image4.png
+   :scale: 25
+   :alt: QR code
 
 **Figure 7.1:** An example of a webpage QR code that includes an
 organisation logo and re-directs the scanner to the PID URL
