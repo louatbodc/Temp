@@ -539,11 +539,7 @@ PIDINST schema recommends the use of the terms *serialNumber* and
 *inventoryNumber.* There is on-going discussion regarding the use of
 explicit fields for these properties in PIDINST.
 
-.. image:: images/image4.png
-   :width: 100 %
-   :height: 100 %
-   :scale: 25 %
-   :alt: QR code
+|image4|
 
 **Figure 7.1:** An example of a webpage QR code that includes an
 organisation logo and re-directs the scanner to the PID URL
@@ -1769,5 +1765,5 @@ must for documenting data provenance and tracking calibration history.
    :width: 6.5in
    :height: 2.11111in
 .. |image4| image:: media/image4.png
-   :width: 6.5in
-   :height: 3.44444in
+   :width: 25
+   :height: 25
