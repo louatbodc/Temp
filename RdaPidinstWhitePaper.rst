@@ -481,7 +481,8 @@ with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
           "RelatedIdentifierValue":"10.4232/10.CPoS-2013-02en",
           "RelatedIdentifierType": "DOI",
           "relationType":"IsIdenticalTo"
-       }]
+          }
+      }]
 
 
 **Snippet 6.1:** Merging duplicate instrument PID records using (1) XML
