@@ -2,7 +2,8 @@
 Persistent Identification of Instruments (PIDINST) PID White Paper
 ===============================================================================
 
-**Contributors**
+Contributors
+============
 
 *Louise Darroch* (louise.darroch@bodc.ac.uk, https://orcid.org/0000-0003-4163-9575),
 British Oceanographic Data Centre, National Oceanography Centre, 
@@ -65,7 +66,8 @@ Working Group members* (https://www.rd-alliance.org/node/57186/members)
 
 
 
-**Table of contents**
+Table of contents
+=================
 
 `1 Overview <#overview>`__
 
