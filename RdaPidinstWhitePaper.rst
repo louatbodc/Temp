@@ -932,114 +932,43 @@ into the following serialization (snippet 10.2), where only the values
 remain and the names used in the type definitions are replaced by their
 type PID suffixes:
 
-+----------------------------------------------------------------------+
-| @prefix ns0: <http://hdl.handle.net/21.T11148/> .                    |
-|                                                                      |
-| @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .                   |
-|                                                                      |
-| <http://hdl.handle.net/21.T11998/0000-001A-3905-F>                   |
-|                                                                      |
-| ns0:178fb558abc755ca7046 [ ns0:ec9f00af0761a065dbd0 [                |
-|                                                                      |
-| ns0:015dc79a77940fb65aa4 "URL"^^xsd:string ;                         |
-|                                                                      |
-| ns0:292a53bd9ee27a242082 "IsDescribedBy "^^xsd:string ;              |
-|                                                                      |
-| ns0:38330bcc6a40ca85e5b4                                             |
-| "https://www.b                                                       |
-| odc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf"^^xsd:string |
-|                                                                      |
-| ] ] ;                                                                |
-|                                                                      |
-| ns0:1f3e82ddf0697a497432 [ ns0:7adfcd13b3b01de0d875 [                |
-|                                                                      |
-| ns0:5b240e16ea32ea25cf65 [                                           |
-|                                                                      |
-| ns0:015dc79a77940fb65aa4 "URL"^^xsd:string ;                         |
-|                                                                      |
-| ns0:38330bcc6a40ca85e5b4                                             |
-| "                                                                    |
-| http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/"^^xsd:string |
-|                                                                      |
-| ] ;                                                                  |
-|                                                                      |
-| ns0:798588c5a1ec532f737b "Sea-Bird Scientific"^^xsd:string, "SBE     |
-| 37-IM"^^xsd:string                                                   |
-|                                                                      |
-| ] ] ;                                                                |
-|                                                                      |
-| ns0:22c62082a4d2d9ae2602 [ ns0:be707495360a234ef049 [                |
-|                                                                      |
-| ns0:2f0e608b621a5a97e0d9 "Commissioned"^^xsd:string ;                |
-|                                                                      |
-| ns0:be707495360a234ef049 "1999-11-01"^^xsd:string                    |
-|                                                                      |
-| ] ] ;                                                                |
-|                                                                      |
-| ns0:4eaec4bc0f1df68ab2a7 [ ns0:89ff31225c5f042fff61 [                |
-|                                                                      |
-| ns0:1e3c17ac2a3e7ebf466a [                                           |
-|                                                                      |
-| ns0:015dc79a77940fb65aa4 "URL"^^xsd:string ;                         |
-|                                                                      |
-| ns0:38330bcc6a40ca85e5b4                                             |
-| "h                                                                   |
-| ttp://vocab.nerc.ac.uk/collection/B75/current/ORG00009/"^^xsd:string |
-|                                                                      |
-| ] ;                                                                  |
-|                                                                      |
-| ns0:798588c5a1ec532f737b "National Oceanography Centre"^^xsd:string  |
-| ;                                                                    |
-|                                                                      |
-| ns0:a88b7dcd1a9e3e17770b "louise.darroch@bodc.ac.uk"^^xsd:string     |
-|                                                                      |
-| ] ] ;                                                                |
-|                                                                      |
-| ns0:55f8ebc805e65b5b71dd "A high accuracy conductivity and           |
-| temperature recorder with an optional pressure sensor designed for   |
-| deployment on moorings. The IM model has an inductive modem for      |
-| real-time data transmission plus internal flash memory data          |
-| storage."^^xsd:string ;                                              |
-|                                                                      |
-| ns0:709a23220f2c3d64d1e1 "Sea-Bird SBE 37-IM MicroCAT C-T            |
-| Sensor"^^xsd:string ;                                                |
-|                                                                      |
-| ns0:72928b84e060d491ee41 [ ns0:1fcb0dad9aced457d67e [                |
-| ns0:f1627ce85386d8d75078                                             |
-| "h                                                                   |
-| ttp://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/"^^xsd:string |
-| ] ], [ ns0:1fcb0dad9aced457d67e [ ns0:f1627ce85386d8d75078           |
-| "h                                                                   |
-| ttp://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/"^^xsd:string |
-| ] ], [ ns0:1fcb0dad9aced457d67e [ ns0:f1627ce85386d8d75078           |
-| "h                                                                   |
-| ttp://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/"^^xsd:string |
-| ] ], [ ns0:1fcb0dad9aced457d67e [ ns0:f1627ce85386d8d75078           |
-| "h                                                                   |
-| ttp://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/"^^xsd:string |
-| ] ] ;                                                                |
-|                                                                      |
-| ns0:8eb858ee0b12e8e463a5 [ ns0:38330bcc6a40ca85e5b4                  |
-| "http://hdl.handle.net/21.T11998/0000-001A-3905-F"^^xsd:string ] ;   |
-|                                                                      |
-| ns0:9a15a4735d4bda329d80                                             |
-| "https://                                                            |
-| linkedsystems.uk/system/instance/TOOL0022_2490/current/"^^xsd:string |
-| ;                                                                    |
-|                                                                      |
-| ns0:eb3c713572f681e6c4c3 [ ns0:d87a75c52c68b06e9a18 [                |
-|                                                                      |
-| ns0:015dc79a77940fb65aa4 "serialNumber"^^xsd:string ;                |
-|                                                                      |
-| ns0:38330bcc6a40ca85e5b4 "2490"^^xsd:string                          |
-|                                                                      |
-| ] ] ;                                                                |
-|                                                                      |
-| ns0:f76ad9d0324302fc47dd                                             |
-| "h                                                                   |
-| ttp://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/"^^xsd:string |
-| .                                                                    |
-+----------------------------------------------------------------------+
+
+.. code-block:: JSON
+
+      @prefix ns0: <http://hdl.handle.net/21.T11148/> .
+      @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+      <http://hdl.handle.net/21.T11998/0000-001A-3905-F>
+        ns0:178fb558abc755ca7046 [ ns0:ec9f00af0761a065dbd0 [
+         ns0:015dc79a77940fb65aa4 "URL"^^xsd:string ;
+         ns0:292a53bd9ee27a242082 "IsDescribedBy "^^xsd:string ;
+         ns0:38330bcc6a40ca85e5b4 "https://www.bodc.ac.uk/data/documents/nodb/pdf/37imbrochurejul08.pdf"^^xsd:string
+         ] ] ;
+        ns0:1f3e82ddf0697a497432 [ ns0:7adfcd13b3b01de0d875 [
+         ns0:5b240e16ea32ea25cf65 [
+            ns0:015dc79a77940fb65aa4 "URL"^^xsd:string ;
+            ns0:38330bcc6a40ca85e5b4 "http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/"^^xsd:string
+         ] ;
+         ns0:798588c5a1ec532f737b "Sea-Bird Scientific"^^xsd:string, "SBE 37-IM"^^xsd:string
+         ] ] ;
+        ns0:22c62082a4d2d9ae2602 [ ns0:be707495360a234ef049 [
+         ns0:2f0e608b621a5a97e0d9 "Commissioned"^^xsd:string ;
+         ns0:be707495360a234ef049 "1999-11-01"^^xsd:string
+         ] ] ;
+        ns0:4eaec4bc0f1df68ab2a7 [ ns0:89ff31225c5f042fff61 [
+         ns0:1e3c17ac2a3e7ebf466a [
+            ns0:015dc79a77940fb65aa4 "URL"^^xsd:string ;
+            ns0:38330bcc6a40ca85e5b4 "http://vocab.nerc.ac.uk/collection/B75/current/ORG00009/"^^xsd:string
+         ] ;
+         ns0:798588c5a1ec532f737b "National Oceanography Centre"^^xsd:string ;
+         ns0:a88b7dcd1a9e3e17770b "louise.darroch@bodc.ac.uk"^^xsd:string
+         ] ] ;
+        ns0:55f8ebc805e65b5b71dd "A high accuracy conductivity and temperature recorder with an optional pressure sensor designed for deployment on moorings. The IM model has an inductive modem for real-time data transmission plus internal flash memory data storage."^^xsd:string ;
+        ns0:709a23220f2c3d64d1e1 "Sea-Bird SBE 37-IM MicroCAT C-T Sensor"^^xsd:string ;
+        ns0:72928b84e060d491ee41 [ ns0:1fcb0dad9aced457d67e [ ns0:f1627ce85386d8d75078 "http://vocab.nerc.ac.uk/collection/P01/current/CNDCPR01/"^^xsd:string ] ], [ ns0:1fcb0dad9aced457d67e [ ns0:f1627ce85386d8d75078 "http://vocab.nerc.ac.uk/collection/P01/current/PSALPR01/"^^xsd:string ] ], [ ns0:1fcb0dad9aced457d67e [ ns0:f1627ce85386d8d75078 "http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/"^^xsd:string ] ], [ ns0:1fcb0dad9aced457d67e [ ns0:f1627ce85386d8d75078 "http://vocab.nerc.ac.uk/collection/P01/current/PREXMCAT/"^^xsd:string ] ] ;
+        ns0:8eb858ee0b12e8e463a5 [ ns0:38330bcc6a40ca85e5b4 "http://hdl.handle.net/21.T11998/0000-001A-3905-F"^^xsd:string ] ;
+
+
 
 **Snippet 10.2:** representation in Turtle Terse RDF of the NERC example
 of table 4.1 that was generated by a JSON-LD to RDF converter from the
