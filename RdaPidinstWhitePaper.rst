@@ -1007,25 +1007,22 @@ identifiers and instrument PIDs can be found indirectly using a
 combination of *GetCapabilities* and *DescribeSensor* operational
 requests to a SOS server.
 
+
+::
+      <sml:identifier>
+        <sml:Term definition="http://www.example.com/definitions/pidinst/">
+           <sml:label>Instrument persistent identifier</sml:label>
+           <sml:value>http://hdl.handle.net/21.T11998/0000-001A-3905-F</sml:value>
+        </sml:Term>
+      </sml:identifier>
+
+
 **Snippet 10.3:** An example of expressing an instrument PID
 (http://hdl.handle.net/21.T11998/0000-001A-3905-F) as identifying
 metadata within a SensorML technical description using the
 *sml:identifier* property for a SeaBird Scientific SBE 37 Conductivity,
 temperature and depth sensor.
 
-+-------------------------------------------------------------------------+
-| <sml:identifier>                                                        |
-|                                                                         |
-| <sml:Term definition="http://www.example.com/definitions/pidinst/">     |
-|                                                                         |
-| <sml:label>Instrument persistent identifier</sml:label>                 |
-|                                                                         |
-| <sml:value>http://hdl.handle.net/21.T11998/0000-001A-3905-F</sml:value> |
-|                                                                         |
-| </sml:Term>                                                             |
-|                                                                         |
-| </sml:identifier>                                                       |
-+-------------------------------------------------------------------------+
 
 The list of properties that can be expressed in SensorML to describe
 sensors is not particularly restrictive and it is recommended that
