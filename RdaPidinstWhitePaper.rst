@@ -138,8 +138,8 @@ interoperability of PID records, particularly where they form part of
 domain-specific best practice. For example, a comprehensive set of
 terminologies that describe *instrumentType* or the recently added
 *Model* (via *modelIdentifier*) are used widely in the Earth science
-marine domain (http://vocab.nerc.ac.uk/collection/L22/current/,
-`http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`__).
+marine domain (`http://vocab.nerc.ac.uk/collection/L22/current/ <http://vocab.nerc.ac.uk/collection/L22/current/>`_,
+`http://vocab.nerc.ac.uk/collection/L05/current/ <http://vocab.nerc.ac.uk/collection/L05/current/>`_).
 An example of the use of common terminologies in ePID records is shown
 in Table 4.1.
 
