@@ -539,12 +539,16 @@ PIDINST schema recommends the use of the terms *serialNumber* and
 *inventoryNumber.* There is on-going discussion regarding the use of
 explicit fields for these properties in PIDINST.
 
+
+
 .. image:: images/image4.png
     :alt: QR code
 
 **Figure 7.1:** An example of a webpage QR code that includes an
 organisation logo and re-directs the scanner to the PID URL
 (http://hdl.handle.net/21.T11998/0000-001A-3905-F).
+
+
 
 
   .. code-block:: XML
@@ -587,32 +591,26 @@ schema using the *relatedIdentifier* property with a *relationType*
 attribute *IsNewVersionOf* for the new PID and, *IsPreviousVersionOf*
 for the superceded PID as shown in Snippet 8.1 and 8.2.
 
-(a)
+(1)
+  .. code-block:: XML
 
-+----------------------------------------------------------------------+
-| <relatedIdentifiers>                                                 |
-|                                                                      |
-|    <relatedIdentifier relatedIdentifierType="DOI"                    |
-|    relatio                                                           |
-| nType="IsNewVersionOf">10.4232/10.CPoS-2013-02en</relatedIdentifier> |
-|                                                                      |
-| </relatedIdentifiers>                                                |
-+----------------------------------------------------------------------+
+      <relatedIdentifiers>
+         <relatedIdentifier relatedIdentifierType="DOI" relationType="IsNewVersionOf">10.4232/10.CPoS-2013-02en</relatedIdentifier>
+      </relatedIdentifiers>
 
-(b)
 
-+----------------------------------------------------------------------+
-| <relatedIdentifiers>                                                 |
-|                                                                      |
-|    <relatedIdentifier relatedIdentifierType="DOI"                    |
-|    relationType="IsPreviousVersionOf">                               |
-| http://hdl.handle.net/21.T11998/0000-001A-3905-F</relatedIdentifier> |
-|                                                                      |
-| </relatedIdentifiers>                                                |
-+----------------------------------------------------------------------+
+
+(2)
+
+  .. code-block:: XML
+
+      <relatedIdentifiers>
+         <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPreviousVersionOf">http://hdl.handle.net/21.T11998/0000-001A-3905-F</relatedIdentifier>
+      </relatedIdentifiers>
+
 
 **Snippet 8.1:** The use of the relatedIdentifier property to represent
-(a) superseding and (b) superseded PID records in XML
+(1) superseding and (2) superseded PID records in XML
 
 (a)
 
