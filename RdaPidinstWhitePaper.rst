@@ -75,7 +75,7 @@ and publishing instrument PIDs locally, potentially on behalf of other
 institutional instrument providers. These recommendations are compiled
 through the activities of the Research Data Alliance (RDA) Persistent
 Identification of Instruments (PIDINST) Working
-Group [1]_\ :sup:`,`\  [2]_. This document is expected to evolve with
+Group [1]_[2]_. This document is expected to evolve with
 new user requirements and working group activities.
 
 2 Instrument PIDs
