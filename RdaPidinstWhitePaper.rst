@@ -547,7 +547,7 @@ organisation logo and re-directs the scanner to the PID URL
 (http://hdl.handle.net/21.T11998/0000-001A-3905-F).
 
 
-  .. code-block:: JSON
+  .. code-block:: XML
   
       <AlternateIdentifiers>
          <AlternateIdentifier alternateIdentifierType="serialNumber"">7351-349l-mn24-019f</AlternateIdentifier>
