@@ -930,10 +930,8 @@ also automatically done by LD converters [14]_ as one can see in the
 following snippet with a conversion into Turtle Terse RDF that results
 into the following serialization (snippet 10.2), where only the values
 remain and the names used in the type definitions are replaced by their
-type PID suffixes:
+type PID suffixes::
 
-
-.. code-block:: JSON
 
       @prefix ns0: <http://hdl.handle.net/21.T11148/> .
       @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
