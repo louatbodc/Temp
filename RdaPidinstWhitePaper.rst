@@ -446,34 +446,22 @@ achieved using the PIDINST metadata schema *relatedIdentifier* property
 with a *relationType* attribute *IsIdenticalTo* as shown in Snippet 6.1.
 
 (a)
+::
+   <relatedIdentifiers>
+         <relatedIdentifier relatedIdentifierType="DOI"
+         <relationType="IsIdenticalTo">10.4232/10.CPoS-2013-02en</relatedIdentifier>
+      </relatedIdentifiers>      
 
-+----------------------------------------------------------------------+
-| <relatedIdentifiers>                                                 |
-|                                                                      |
-|    <relatedIdentifier relatedIdentifierType="DOI"                    |
-|    relati                                                            |
-| onType="IsIdenticalTo">10.4232/10.CPoS-2013-02en</relatedIdentifier> |
-|                                                                      |
-| </relatedIdentifiers>                                                |
-+----------------------------------------------------------------------+
 
 (b)
+::
+   [{
+      "RelatedIdentifier":{
+         "RelatedIdentifierValue":"10.4232/10.CPoS-2013-02en",
+         "RelatedIdentifierType": "DOI",
+         "relationType":"IsIdenticalTo"
+      }]
 
-+-------------------------------------------------------+
-| [{                                                    |
-|                                                       |
-| "RelatedIdentifier":{                                 |
-|                                                       |
-| "RelatedIdentifierValue":"10.4232/10.CPoS-2013-02en", |
-|                                                       |
-| "RelatedIdentifierType": "DOI",                       |
-|                                                       |
-| "relationType":"IsIdenticalTo"                        |
-|                                                       |
-| }                                                     |
-|                                                       |
-| }]                                                    |
-+-------------------------------------------------------+
 
 **Snippet 6.1:** Merging duplicate instrument PID records using (a) XML
 and (b) JSON
