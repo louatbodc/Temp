@@ -1347,6 +1347,10 @@ humidity, temperature, etc. To deliver high quality measurement data,
 ICOS considers the adoption of a persistent identifier for instruments a
 must for documenting data provenance and tracking calibration history.
 
+
+Footnotes
+=========
+
 .. [1]
    https://www.rd-alliance.org/groups/persistent-identification-instruments-wg
 
