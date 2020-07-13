@@ -539,7 +539,8 @@ PIDINST schema recommends the use of the terms *serialNumber* and
 *inventoryNumber.* There is on-going discussion regarding the use of
 explicit fields for these properties in PIDINST.
 
-|image4|
+.. image:: images/image4.png
+    :alt: QR code
 
 **Figure 7.1:** An example of a webpage QR code that includes an
 organisation logo and re-directs the scanner to the PID URL
@@ -1755,15 +1756,3 @@ must for documenting data provenance and tracking calibration history.
    the Flow of Sensor Observations to Archives and Publications , OCEANS
    2015 Genova . doi: 10.1109/OCEANS-Genova.2015.7271657
 
-.. |image1| image:: media/image1.png
-   :width: 2.24479in
-   :height: 2.24479in
-.. |image2| image:: media/image2.png
-   :width: 6.5in
-   :height: 4.51389in
-.. |image3| image:: media/image3.png
-   :width: 6.5in
-   :height: 2.11111in
-.. |image4| image:: media/image4.png
-   :width: 25
-   :height: 25
