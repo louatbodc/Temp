@@ -8,12 +8,12 @@ Persistent Identification of Instruments (PIDINST) PID White Paper
 British Oceanographic Data Centre, National Oceanography Centre, 
 Liverpool, L3 5DA, United Kingdom
 
-*Robert Huber* (rhuber@uni-bremen.de, https://orcid.org/0000-0003-3000-0020) 
+*Robert Huber* (rhuber@uni-bremen.de, https://orcid.org/0000-0003-3000-0020), 
 MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener Str. 8, 28359 Bremen, Germany
 
 *Anusuriya Devaraju* (adevaraju@marum.de, https://orcid.org/0000-0003-0870-3192)
-MARUM - Center for Marine Environmental Sciences, University of Bremen
-PANGAEA, Center for Marine Environmental Sciences (MARUM), University of Bremen, Leobener Str. 8, 28359 Bremen, Germany
+MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener Str. 8, 28359 Bremen, Germany and
+PANGAEA - Center for Marine Environmental Sciences (MARUM), University of Bremen, Leobener Str. 8, 28359 Bremen, Germany
 
 *Ulrich Schwardmann* (ulrich.schwardmann@gwdg.de, https://orcid.org/0000-0001-6337-8674),
 GWDG, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen, Am
