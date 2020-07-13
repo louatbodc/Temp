@@ -1217,13 +1217,11 @@ the root group of the NetCDF file instead of sub groups. The PIDINST
 instrument identifier may be expressed as an instrument attribute e.g.
 snippet 11.5. Ideally, blank separated lists should be used if linking
 more than one instrument.
-
-int instrument_parameter_variable;
-
-   instrument_parameter_variable:long_name = "" ;
-   instrument_parameter_variable:comment = "" ;
-
-   Instrument_parameter_variable:pidinst_pid = "" ;
+::
+      int instrument_parameter_variable;
+         instrument_parameter_variable:long_name = "" ;
+         instrument_parameter_variable:comment = "" ;
+         instrument_parameter_variable:pidinst_pid = "" ;
 
 **Snippet 11.5:** Addition of a PIDINST PID attribute to NCEI CF-NetCDF
 files.
