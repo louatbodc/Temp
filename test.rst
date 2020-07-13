@@ -9,9 +9,9 @@
        }]
 
 
-.. image:: ../images/image4.png
-   :scale: 50
-   :alt: QR code
+
+.. image:: images/image4.png
+    :alt: QR code
 
 
 
