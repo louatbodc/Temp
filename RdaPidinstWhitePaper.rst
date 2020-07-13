@@ -612,45 +612,39 @@ for the superceded PID as shown in Snippet 8.1 and 8.2.
 **Snippet 8.1:** The use of the relatedIdentifier property to represent
 (1) superseding and (2) superseded PID records in XML
 
-(a)
 
-+-------------------------------------------------------+
-| [{                                                    |
-|                                                       |
-| "RelatedIdentifier":{                                 |
-|                                                       |
-| "RelatedIdentifierValue":"10.4232/10.CPoS-2013-02en", |
-|                                                       |
-| "RelatedIdentifierType": "DOI",                       |
-|                                                       |
-| "relationType":"IsNewVersionOf"                       |
-|                                                       |
-| }                                                     |
-|                                                       |
-| }]                                                    |
-+-------------------------------------------------------+
 
-(b)
+(1)
 
-+----------------------------------------------------------------------+
-| [{                                                                   |
-|                                                                      |
-| "RelatedIdentifier":{                                                |
-|                                                                      |
-| "Related                                                             |
-| IdentifierValue":"http://hdl.handle.net/21.T11998/0000-001A-3905-F", |
-|                                                                      |
-| "RelatedIdentifierType": "DOI",                                      |
-|                                                                      |
-| "relationType":"IsPreviousVersionOf"                                 |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| }]                                                                   |
-+----------------------------------------------------------------------+
+  .. code-block:: JSON
+
+      [{
+        "RelatedIdentifier":{
+          "RelatedIdentifierValue":"10.4232/10.CPoS-2013-02en",
+          "RelatedIdentifierType": "DOI",
+          "relationType":"IsNewVersionOf"
+        }
+      }]
+
+
+(2)
+
+  .. code-block:: JSON
+
+      [{
+        "RelatedIdentifier":{
+          "RelatedIdentifierValue":"http://hdl.handle.net/21.T11998/0000-001A-3905-F",
+          "RelatedIdentifierType": "DOI",
+          "relationType":"IsPreviousVersionOf"
+        }
+      }]
+
+
 
 **Snippet 8.2:** The use of the relatedIdentifier property to represent
-(a) superseding and (b) superseded PID records in JSON
+(1) superseding and (2) superseded PID records in JSON
+
+
 
 9 Landing page content
 ======================
