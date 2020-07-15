@@ -59,7 +59,8 @@ Computing and Data Centre, Alfred Wegener Institute Helmholtz Centre for
 Polar and Marine Research. Am Handelshafen 12, 27570, Bremerhaven,
 Germany
 
-*Tina*
+*Tina Dohna* (tdohna@marum.de, https://orcid.org/0000-0002-5948-0980), 
+MARUM - Center for Marine Environmental Sciences, University of Bremen, Leobener Str. 8, 28199 Bremen, Germany
 
 *The Research Data Alliance Persistent Identification of Instruments
 Working Group members* (https://www.rd-alliance.org/node/57186/members)
